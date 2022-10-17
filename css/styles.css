@@ -1,0 +1,285 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  margin: auto;
+  overflow: hidden;
+}
+
+/** Sección Header **/
+
+header {
+  background-color: #6c63ff;
+  height: 90px;
+  max-height: 10em;
+}
+
+header .logo {
+  font-size: 35px;
+  float: left;
+  margin-left: 50px;
+  margin-top: 25px;
+  font-weight: 400;
+}
+
+header .logo a {
+  color: #dedefd;
+}
+
+header nav {
+  font-size: 20px;
+  float: right;
+  margin-top: 35px;
+  margin-right: 40px;
+}
+
+header nav li {
+  display: inline;
+}
+
+header nav li a {
+  color: #dedefd;
+  margin: 18px;
+  padding: 8px 4px;
+  font-weight: 600;
+}
+
+header nav li a:hover {
+  border-bottom: 2px solid #dedefd;
+}
+
+/** Sección Media Izqu. **/
+
+section .left-side h1 {
+  float: left;
+  font-size: 45px;
+  margin-left: 80px;
+  margin-top: 160px;
+  color: #504f60;
+}
+
+/** Sección Media Der. **/
+
+section .right-side img {
+  float: right;
+  width: 650px;
+  height: 445px;
+  margin-right: 80px;
+}
+
+/** Form **/
+
+.form-section {
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  font-size: 22px;
+  border: 2px solid #9c9ca1;
+  border-radius: 10px;
+  width: 20em;
+}
+
+.form-section .form input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 20px;
+  background-color: #f0f0f0;
+}
+
+.form-section .form input[type="text"]:focus {
+  border: 2px solid #555;
+  background-color: #fff;
+}
+
+.form-section .form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 20px;
+  background-color: #f0f0f0;
+}
+
+.form-section .form input[type="password"]:focus {
+  border: 2px solid #555;
+  background-color: #fff;
+}
+
+.form-section .form input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 20px;
+  background-color: #f0f0f0;
+}
+
+.form-section .form input[type="email"]:focus {
+  border: 2px solid #555;
+  background-color: #fff;
+}
+
+.form-section .form .button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 50px;
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: 0;
+}
+
+.form-section .form a {
+  color: #9c9ca1;
+  float: right;
+}
+
+.form-section .form a:hover {
+  color: #555;
+}
+
+/** Sección Footer  **/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4px 0;
+  background-color: #9c9ca1;
+  text-align: center;
+}
+
+.static {
+  position: fixed;
+  bottom: 0;
+}
+
+.relative {
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  color: #dedefd;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/** Agregados **/
+
+
+/** Responsive Media queries **/
+
+@media (max-width: 1250px) {
+  section .left-side h1 {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  section .right-side img {
+    float: none;
+    width: 550px;
+    height: 345px;
+    margin-bottom: 70px;
+  }
+
+  section .right-side {
+    max-width: 550px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1180px) {
+  header,
+  header nav,
+  header nav li,
+  header .logo {
+    float: none;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+  header {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .form-section {
+    width: auto;
+    border: 0;
+  }
+
+  section .left-side h1 {
+    font-size: 35px;
+  }
+
+  section .right-side img {
+    float: none;
+    width: 410px;
+    height: 215px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  section .right-side {
+    max-width: 410px;
+    margin: auto;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  section .right-side img {
+    width: 370px;
+    height: 205px;
+  }
+}
+
+@media (max-width: 320px) {
+  section .right-side img {
+    width: 320px;
+    height: 205px;
+  }
+}

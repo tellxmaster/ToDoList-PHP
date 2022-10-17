@@ -1,0 +1,232 @@
+.lista-tareas {
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  .tarea {
+    display: flex;
+    border-bottom: .5px solid rgb(53, 53, 53);
+    box-shadow: .0em .05em .10em rgb(99, 99, 99);
+    padding: 1em;
+  }
+
+  .boton {
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 0.75em;
+    margin: auto .5em;
+    box-shadow: .0em .05em .15em rgb(99, 99, 99);
+  }
+
+  hr {
+    width: 80%;
+    color: gray;
+  }
+
+  .lista-tareas i
+  {
+    margin: 1em;
+  }
+
+  i
+  {
+      margin: 0 .2em;
+  }
+
+  .tarea-titulo
+  {
+    width: 20%;
+    text-align: center;
+  }
+
+  .tarea-desc
+  {
+    width: 80%;
+    text-align: center;
+  }
+  
+  .tarea-fec
+  {
+    width: 20%;
+    text-align: center;
+  }
+
+  .tarea
+  {
+      margin: 1em 0;
+  }
+
+
+  .agregar label
+  {
+      font-size: 1.1em;
+  }
+
+
+  .tarea form
+  {
+    display: flex;
+  }
+
+.tareas-title
+{
+  text-align: center; 
+  margin: 1.5em 0;
+}
+
+.agregar
+{
+  width: 80%;
+  margin: 3em auto;
+}
+
+.agregar .tarea-form
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.agregar .tarea-form input
+{
+  height: 2.5em;
+  width: 30%;
+  margin: 0 1em;
+  border-radius: 0.5em;
+  border: 2px solid rgb(99, 99, 99);
+}
+
+.agregar .tarea-form button
+{
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0 2em;
+  color: white;
+  text-align: center;
+}
+
+.agregar .tarea-form label
+{
+  margin: auto 0;
+}
+
+.menu-editar
+{
+  position: absolute;
+  background-color: #D9D7F1; 
+  padding: 2em;
+  border-radius: .35em;
+  width: 76%;
+}
+
+.menu-editar button
+{
+  height: 10%;
+  width: 15%;
+  border-radius: .25em;
+  background-color: #6c63ff;
+  border: none;
+  padding: 0 1em;
+  color: white;
+}
+
+.menu-editar input
+{
+  height: 2.5em;
+  border: 2px solid rgb(99, 99, 99);
+  border-radius: .25em;
+  margin: .5em 0;
+}
+
+.edit-desc
+{
+  width: 50%;
+}
+
+
+
+@media (max-width: 700px) {
+  .agregar .tarea-form
+  {
+    flex-direction: column;
+  }
+
+  .agregar .tarea-form input
+  {
+    width: 98%;
+    margin: 1em 0;
+  }
+
+  .agregar .tarea-form button
+  {
+    margin: 1em 0;
+    width: 100%;
+    height: 3em;
+  }
+
+  nav
+  {
+    width: 100%;
+  }
+
+  nav ul
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li
+  {
+    display: flex;
+    font-size: .8em;
+    width: 33%;
+    text-align: center;
+  }
+
+
+  header{
+    height: 10em;
+  }
+
+  .tarea
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarea button{
+    margin: .5em 0;
+  }
+
+  
+  .tarea-titulo
+  {
+      width: 100%;
+      margin: 1em 0;
+  }
+
+  .menu-editar button
+  {
+    height: 2%;
+    width: 93%;
+    border-radius: .25em;
+    background-color: #6c63ff;
+    border: none;
+    padding: 0 1em;
+    color: white;
+  }
+
+  .menu-editar input
+  { 
+    width: 90%;
+    margin: .5em 0;
+  }
+
+  .menu-editar
+  {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
